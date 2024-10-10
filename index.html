@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Portal</title>
+    <link rel="icon" href="./favicon.png">
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial,  sans-serif;
+            background-color: #ceeff2;
+        }
+  
+        header, footer{
+            background-color: #395c60;
+            color: aliceblue;
+            text-align: center;
+            padding: 2px;
+        }
+
+        .navitem{
+            display: inline;
+            padding: 15px;
+        }
+
+        .navitem a {
+            text-decoration: none;
+            color: #faffff;
+        }
+        .registrationform{
+         width:max-content;
+         margin-left: auto;
+         margin-right: auto;
+        }
+        .employeetable{
+            text-align: center;
+        }
+        table {
+             margin-left: auto;
+             margin-right: auto;
+             width: 100%;
+             border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid #395c60 ;
+            padding: 5px;
+        }
+        .contactus{
+            text-align: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <header>
+         <h1 style> Welcome to Company HR Portal</h1>
+         <nav>
+              <ul>
+                    <li class="navitem"><a href="#employee-registration">Employee Registration</a></li> 
+                    <li class="navitem"><a href="#employee-directory">Employee Directory</a></li>
+                    <li class="navitem"><a href="#contact-us">Contact Us</a></li> 
+              </ul>
+         </nav>  
+     </header>
+
+     <image src="./images/office.png" style="width: 100%; height: 300px;"></image> 
+
+     <section id="employee-registration" class="registrationform">
+        <h2>Employee Registration</h2>
+        <p>Fill the below form to register yourself as <em>employee</em></p>
+        <form> 
+            <label for="name">Name : </label>
+            <input type="text" id="name"><br><br>
+            <label for="email">Email Id : </label>
+            <input type="email" id="email"><br><br>
+            <label for="password">Password : </label>
+            <input type="password" id="password"><br><br>
+            <label for="age">Age : </label>
+            <input type="number" id="age" ><br><br>
+            <label for="role">Select role : </label>
+            <select>
+                <option>Software Engineer</option>
+                <option>Product Manager</option>
+                <option>Designer</option>
+                <option>Hr Representative</option>
+            </select><br><br>
+            <label for="joiningdate">Select joining date : </label>
+            <input type="date" id="joiningdate"><br><br>
+            <input type="submit"><br><br>
+        </form>
+     </section> 
+
+     <section id="employee-directory" class="employeetable">
+     <h2>Employee Directory</h2>
+     <p>Directory of all registered employees.</p>
+     <table>
+        <tr>
+            <th>Employee Id</th>
+            <th>Employee Name</th>
+            <th>Employee Role</th>
+        </tr>
+        <tr>
+            <td>234</td>
+            <td>Jai Dixit</td>
+            <td>Software Engineers</td>
+        </tr>
+        <tr>
+            <td>235</td>
+            <td>Naina Agrwal</td>
+            <td>Software Engineer</td>
+        </tr>
+        <tr>
+            <td>236</td>
+            <td>Dev Pratap Singh</td>
+            <td>Software Engineer</td>
+        </tr>
+     </table>
+     </section>
+ 
+     <section id="contact-us" class="contactus">
+     <h2>Contact Us</h2>
+     <p>You can Contact us at company@official.com or  visit us between 9Am - 6Pm. </p><br>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.9253336055986!2d80.93656807367277!3d26.937581459024596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957007c855441%3A0x4998b0e4bdf57d00!2sRetro%20Cabana%20Cafe!5e0!3m2!1sen!2sin!4v1724938722508!5m2!1sen!2sin" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </section><br>
+
+     <footer>
+        <p>&copy;2023 Comapany Name</p>
+     </footer>
+
+</body>
+</html>
